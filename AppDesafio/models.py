@@ -7,3 +7,6 @@ class Familia (models.Model):
     edad = models.IntegerField()
     fecha = models.DateField()
 
+    def __str__(self):
+        return f"Nombre : {self.nombre} , Edad : {self.edad} , Fecha: {self.fecha}"
+
